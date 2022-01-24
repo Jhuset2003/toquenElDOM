@@ -1,3 +1,243 @@
-body{
-    background-color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Quattrocento+Sans&display=swap');
+
+:root{
+    --red: rgb(255, 0, 0, 80%);
+    --redtitle: rgb(128, 0, 0, 43%);
+    --white: #FFFFFF;
+    --black: #000000;
+
+    --font-family: 'Kaushan Script', cursive;
+    --font-family: 'Quattrocento Sans', sans-serif;
+
 }
+
+
+h1{
+    font-family: 'Kaushan Script', cursive; 
+}
+
+p, h2{
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: bold;
+}   
+
+.info{
+    background-image: url(img/textura_nm.png);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title_one{
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: solid 1px var(--redtitle);
+    background-color: var(--redtitle);
+    width: max-content;
+    padding: 0 15px;
+}
+
+.container_info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 60px;
+}
+.container_one{
+    align-items: center;
+    margin: 30px;
+    border-radius: 32px;
+    border: solid 1px var(--red);
+    background-color: var(--red);
+}
+
+.title_second{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.parrafo{
+    text-align: center;
+    padding: 15px;
+}
+
+.tutorial{
+    background-image: url(img/textura_nm.png);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.video{
+    width: 100%;
+    height: 50%;
+    padding-top: 80px;
+}
+
+.container_tutorial{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-top: 40px;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_two{
+    align-items: center;
+    margin: 4px;
+    border-radius: 32px;
+    border: solid 1px var(--red);
+    background-color: var(--red);
+}
+
+.title_two{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.parrafo_two{
+    text-align: center;
+    padding: 15px;
+}
+
+@media screen and (max-width: 768px){
+    .info{
+        background-image: url(img/textura_nm.png);
+        background-size: cover;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title_one{
+        text-align: center;
+        font-size: 1.2rem;
+        border-radius: 20px;
+        border: solid 1px var(--redtitle);
+        background-color: var(--redtitle);
+        width: max-content;
+        padding: 0 15px;
+    }
+
+    .container_info{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .container_one, .container_two{
+        align-items: center;
+        margin: 4px;
+        border-radius: 32px;
+        border: solid 1px var(--red);
+        background-color: var(--red);
+    }
+    .title_second, .title_two{
+        text-align: center;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    .parrafo, .parrafo_two{
+        text-align: center;
+        padding: 15px;
+    }
+
+    .tutorial{
+        background-image: url(img/textura_nm.png);
+        background-size: cover;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .container_tutorial{
+        position: relative;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+
+}
+
+
+@media screen and (max-width: 640px) {
+
+    .info{
+        background-image: url(img/textura_nm.png);
+        background-size: cover;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .title_one{
+        text-align: center;
+        font-size: 1rem;
+        border-radius: 20px;
+        border: solid 1px var(--redtitle);
+        background-color: var(--redtitle);
+        width: max-content;
+        padding: 0 20px;
+    }
+
+    .container_info{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .container_one, .container_two{
+        align-items: center;
+        margin: 10px;
+        border-radius: 20px;
+        border: solid 1px var(--red);
+        background-color: var(--red);
+    }
+    
+    .title_second, .title_two{
+        text-align: center;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    .parrafo, .parrafo_two{
+        text-align: center;
+        padding: 20px;
+    }
+
+    .tutorial{
+        background-image: url(img/textura_nm.png);
+        background-size: cover;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .video{
+        padding-top: 40px;
+        padding-left: 2px;
+    }
+
+    .container_tutorial{
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
