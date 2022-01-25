@@ -241,80 +241,78 @@ p, h2{
 
 /*--------------piano----------*/
 
-.keyboard_holder{
-    width: 1120px;
-}
-
-.banner {
-    width: 1200px; 
-    height: 340px; 
-    object-fit: cover; 
-    object-position: 0px -90px;
-}	
-
-.content {
-    background-color: #FAD7A0; 
-    margin: 20px; 
-    padding: 30px; 
-    border-style: double; 
-    border-width: 5px; 
-    font-size: 18px; 
-    text-align: left; 
-    width: 1200px; display: 
-    inline-block; 
-}
-
-.key { 
-    position: absolute; 
-    font-family: Helvetica; 
-    font-weight: 100; font-size: 12px;
-	border: 1px solid rgba(32,32,32,0.2);
-	border-radius: 0px 0px 5px 5px;
-	cursor:pointer;
-	box-shadow: 0px 5px 1px rgba(32,32,32,0.2);
-	-webkit-transition: margin 0.05s ease, 
-    background-color 0.05s ease, 
-    box-shadow 0.05s ease; 
-}
-
-.key:hover { 
-    background-color: var(--red); 
-    color: #FFFFFF;
-}
-		
-.key .label { 
-    position: absolute; 
-    bottom: 15px; 
-    text-align: center; 
-    left: 0px; 
-    right: 0px; 
-}
-
-.keyLabel {
-    font-weight: 900; 
-    text-shadow: 0px -1px 5px #EBF508; 
-    font-size: 15px;
-}
-
-.black { 
-    background-color: rgb(32,32,32); 
-    color: var(--red); 
-    z-index: 1; 
-    text-shadow: 0px -1px 1px #FF0000; 
-}
-	
-.white { 
-    color: var(--redtitle); 
-    z-index: 0; 
-
-}
-	
-.keyboard-holder { 
-    margin: 30px auto; 
-    height: 200px; 
-    position:relative; 
-    user-select:none; 
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    -o-user-select:none; 
-}
+#cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+  }
+  
+  span {
+    font-size: 30px;
+    font-family: Arial;
+    color: white;
+  }
+  
+  #contenedor {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #piano {
+    display: flex;
+    position: relative;
+  }
+  
+  .tecla-blanca {
+    background-color: white;
+    height: 120px;
+    width: 40px;
+    border: 1.5px solid black;
+    border-radius: 0 0 6px 6px;
+  }
+  
+  .tecla-negra {
+    background-color: black;
+    height: 80px;
+    width: 20px;
+    border: 1.5px solid black;
+    position: absolute;
+    border-radius: 0 0 5px 5px;
+  }
+  
+  .REb4 {
+    left: 30px;
+  }
+  
+  .MIb4 {
+    left: 70px;
+  }
+  
+  .SOLb4 {
+    left: 150px;
+  }
+  
+  .LAb4 {
+    left: 190px;
+  }
+  
+  .SIb4 {
+    left: 230px;
+  }
+  
+  .REb5 {
+    left: 310px;
+  }
+  
+  .MIb5 {
+    left: 350px;
+  }
+  
+  /* .tecla-blanca: */
+  .active {
+    background-color: #aaa;
+  }
+  
