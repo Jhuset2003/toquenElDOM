@@ -255,16 +255,19 @@ p, h2{
   }
   
   #contenedor {
-    height: 90%;
+    height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(114, 1, 1, 0.808);
+    border-radius: 30px;
   }
   
   #piano {
     display: flex;
     position: relative;
     padding-top: 50px;
+    padding-bottom: 50px;
     overflow: hidden;
   }
   
@@ -353,4 +356,25 @@ p, h2{
       .MIb5 {
         left: 525px;
       }
+}
+/*Boton Home*/
+.boton-home i img{
+    width: 40px;
+}
+.boton{
+    position: absolute;
+    right: 5%;
+    top: 1%;
+    border-radius: 80px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(255, 0, 0);
+    border-style:none ;
+    border: 2px solid black;
+    transition: 0.4s;
+    
+}
+.boton:hover{
+    width: 80px;
+    height: 80px;
 }
