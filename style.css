@@ -264,6 +264,8 @@ p, h2{
   #piano {
     display: flex;
     position: relative;
+    padding-top: 50px;
+    overflow: hidden;
   }
   
   .tecla-blanca {
@@ -315,4 +317,40 @@ p, h2{
   .active {
     background-color: #aaa;
   }
-  
+  @media screen and (min-width: 1000px){
+    .tecla-blanca {
+        height: 180px;
+        width: 60px;
+      }
+      .tecla-negra {
+        height: 100px;
+        width: 40px;
+      }
+      .REb4 {
+        left: 40px;
+      }
+      
+      .MIb4 {
+        left: 100px;
+      }
+      
+      .SOLb4 {
+        left: 225px;
+      }
+      
+      .LAb4 {
+        left: 285px;
+      }
+      
+      .SIb4 {
+        left: 350px;
+      }
+      
+      .REb5 {
+        left: 465px;
+      }
+      
+      .MIb5 {
+        left: 525px;
+      }
+}
