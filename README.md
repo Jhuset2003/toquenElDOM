@@ -20,5 +20,6 @@ https://elastic-perlman-4b5cea.netlify.app/
 
 ## Imagenes del proyecto:
 
-
+[![TED.png](https://i.postimg.cc/ZqCYf6Dm/TED.png)](https://postimg.cc/KKhyj32p)
+[![TED-2.png](https://i.postimg.cc/8khpnpw7/TED-2.png)](https://postimg.cc/Lh8FJMcS)
 
