@@ -64,7 +64,7 @@
 /*menu*/
 @media (max-width: 640px) {
   header {
-      background-image: url(./Inicio/img/pexels-yan-krukov-9002855.jpg);
+      background-image: url(./img/pexels-yan-krukov-9002855.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       width: 100%;
@@ -124,7 +124,7 @@
 }
 @media (min-width: 640px) {
   header {
-      background-image: url(./Inicio/img/pexels-yan-krukov-9002855.jpg);
+      background-image: url(./img/pexels-yan-krukov-9002855.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       width: 100%;
@@ -205,7 +205,7 @@
       width: 70px;
   }
   header{
-      background-image: url(./Inicio/img/pexels-cottonbro-4038322.jpg);
+      background-image: url(./img/pexels-cottonbro-4038322.jpg);
   }
 }
 @media (min-width: 1280px){
