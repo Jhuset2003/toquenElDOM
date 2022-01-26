@@ -1,239 +1,164 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Quattrocento+Sans&display=swap');
-
-:root{
-    --red: rgb(255, 0, 0, 80%);
-    --redtitle: rgb(128, 0, 0, 43%);
-    --white: #FFFFFF;
-    --black: #000000;
-
-    --font-family: 'Kaushan Script', cursive;
-    --font-family: 'Quattrocento Sans', sans-serif;
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-
-h1{
-    font-family: 'Kaushan Script', cursive; 
+/*Menu*/
+.menu-content img{
+  width: 50px;
 }
-
-p, h2{
-    font-family: 'Quattrocento Sans', sans-serif;
-    font-weight: bold;
-}   
-
-.info{
-    background-image: url(img/textura_nm.png);
-    background-size: cover;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.menu-content{
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
 }
-
-.title_one{
-    text-align: center;
-    font-size: 1.2rem;
-    border-radius: 20px;
-    border: solid 1px var(--redtitle);
-    background-color: var(--redtitle);
-    width: max-content;
-    padding: 0 15px;
+.menu-content li{
+  position: absolute;
+  list-style: none;
+  transition: 0.5s;
+  transition-delay: calc(0.1s * var(--i));
+  right: 0;
+  transform: translateX(-90px);
 }
-
-.container_info{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 60px;
+.menu-content li a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color:rgb(255, 255, 255);
+  border-radius: 50%;
+  transition: 0.2s;
 }
-.container_one{
-    align-items: center;
-    margin: 30px;
-    border-radius: 32px;
-    border: solid 1px var(--red);
-    background-color: var(--red);
+.menu-content li a:hover{
+  width: 70px;
+  height: 70px;
 }
-
-.title_second{
-    text-align: center;
-    font-weight: bold;
-    font-size: 2rem;
+.menu-content.active li{
+  transform: translateX(calc(400px / 4 * var(--i)));
 }
-.parrafo{
-    text-align: center;
-    padding: 15px;
+.btn-menu{
+  position: absolute;
+  width:80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  z-index: 10;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s;
+  left: 20%;
 }
-
-.tutorial{
-    background-image: url(img/textura_nm.png);
-    background-size: cover;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.btn-menu:hover{
+  background-color: rgb(250, 68, 68);
+  box-shadow: 40px solid black;
 }
-.video{
-    width: 100%;
-    height: 50%;
-    padding-top: 80px;
+.menu-content.active .btn-menu{
+  transform: rotate(360deg);
 }
+/*menu*/
+@media (min-width: 640px) {
+  header {
+      background-image: url(./img/pexels-yan-krukov-9002855.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      min-height:100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
-.container_tutorial{
-    position: relative;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding-top: 40px;
-    gap: 20px;
-    padding: 20px;
-    align-items: center;
-    justify-content: center;
+  }
+  .cuvierta{
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.384);
+      z-index: 1;
+  }
+  .letters{
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 100px;
+  }
+  header h1 {
+      font-family: 'Kaushan Script', cursive;
+      font-size:80px;
+      text-align: center;
+      color:white;
+
+  }
+  header p{
+      font-family: 'Quattrocento Sans', sans-serif;
+      font-size: 40px;
+      color:white;
+  }
+  header .redes img{
+      width: 40px;
+      display: flex;
+      margin:30px;
+      filter: invert(1);
+      transition: 0.3s;
+  }
+  header .redes img:hover{
+      width: 80px;
+  }
+  header .redes{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      width: 300px;
+      height: 10vh;
+  }
 }
-
-.container_two{
-    align-items: center;
-    margin: 4px;
-    border-radius: 32px;
-    border: solid 1px var(--red);
-    background-color: var(--red);
+@media (min-width: 768px){
+  header h1 {
+      font-size: 100px;
+  }
+  header p{
+      font-size: 60px;
+  }
+  header .redes img{
+      width: 60px;
+  }
 }
+@media (min-width: 1024px){
 
-.title_two{
-    text-align: center;
-    font-weight: bold;
-    font-size: 2rem;
+  header h1 {
+      font-size: 120px;
+  }
+  header p{
+      font-size: 80px;
+  }
+  header .redes img{
+      width: 70px;
+  }
+  header{
+      background-image: url(./img/pexels-cottonbro-4038322.jpg);
+  }
 }
-
-.parrafo_two{
-    text-align: center;
-    padding: 15px;
-}
-@media screen and (max-width: 768px){
-    .info{
-        background-image: url(img/textura_nm.png);
-        background-size: cover;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .title_one{
-        text-align: center;
-        font-size: 1.2rem;
-        border-radius: 20px;
-        border: solid 1px var(--redtitle);
-        background-color: var(--redtitle);
-        width: max-content;
-        padding: 0 15px;
-    }
-
-    .container_info{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .container_one, .container_two{
-        align-items: center;
-        margin: 4px;
-        border-radius: 32px;
-        border: solid 1px var(--red);
-        background-color: var(--red);
-    }
-    .title_second, .title_two{
-        text-align: center;
-        font-weight: bold;
-        font-size: 2rem;
-    }
-    .parrafo, .parrafo_two{
-        text-align: center;
-        padding: 15px;
-    }
-
-    .tutorial{
-        background-image: url(img/textura_nm.png);
-        background-size: cover;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .container_tutorial{
-        position: relative;
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-
-
-}
-
-
-@media screen and (max-width: 640px) {
-
-    .info{
-        background-image: url(img/textura_nm.png);
-        background-size: cover;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .title_one{
-        text-align: center;
-        font-size: 1rem;
-        border-radius: 20px;
-        border: solid 1px var(--redtitle);
-        background-color: var(--redtitle);
-        width: max-content;
-        padding: 0 20px;
-    }
-
-    .container_info{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .container_one, .container_two{
-        align-items: center;
-        margin: 10px;
-        border-radius: 20px;
-        border: solid 1px var(--red);
-        background-color: var(--red);
-    }
-    
-    .title_second, .title_two{
-        text-align: center;
-        font-weight: bold;
-        font-size: 2rem;
-    }
-    .parrafo, .parrafo_two{
-        text-align: center;
-        padding: 20px;
-    }
-
-    .tutorial{
-        background-image: url(img/textura_nm.png);
-        background-size: cover;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .video{
-        padding-top: 40px;
-        padding-left: 2px;
-    }
-
-    .container_tutorial{
-        display: flex;
-        gap: 0;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-}
+@media (min-width: 1280px){
+  header h1 {
+      font-size: 140px;
+  }
+  header p{
+      font-size: 90px;
+  }
+  header .redes img{
+      width: 80px;
+  }
+  header .redes img:hover{
+      width: 100px;
+  }
+} 
