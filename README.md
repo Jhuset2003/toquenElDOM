@@ -16,3 +16,8 @@ https://danielatobar.atlassian.net/jira/software/projects/TED/boards/2/roadmap?s
 https://www.figma.com/file/H1LLdBpy7V7ggKO0vCQK5X/Toquen-el-DOM?node-id=0%3A1
 
 ##  Link del proyecto desplegado:
+
+## Imagenes del proyecto:
+
+
+
