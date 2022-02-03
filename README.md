@@ -20,4 +20,4 @@ https://elastic-perlman-4b5cea.netlify.app/
 
 ## Imágenes del proyecto:
 
-[![smartmockups-kyw4qvk7.jpg](https://i.postimg.cc/3NSYCRCN/smartmockups-kyw4qvk7.jpg)](https://postimg.cc/Pvwgdd7n)
+[![smartmockups-kyw4qvk7.jpg](https://i.postimg.cc/3NSYCRCN/smartmockups-kyw4qvk7.jpg)](https://postimg.cc/Pvwgdd7n) 
