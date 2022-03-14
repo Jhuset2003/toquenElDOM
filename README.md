@@ -7,17 +7,13 @@ Es una web interactiva creada para la escuela de música online "Toquen el DOM".
 -Css 
 -JavasScript 
 
-## Product backlog:
+## [Backlog](https://danielatobar.atlassian.net/jira/software/projects/TED/boards/2/roadmap?shared=&atlOrigin=eyJpIjoiMTcyZmRlNjIzMmIyNDdhMWI3ZjE5ODBkNjU5N2MyMTUiLCJwIjoiaiJ9)
 
-https://danielatobar.atlassian.net/jira/software/projects/TED/boards/2/roadmap?shared=&atlOrigin=eyJpIjoiMTcyZmRlNjIzMmIyNDdhMWI3ZjE5ODBkNjU5N2MyMTUiLCJwIjoiaiJ9
-
-## Diseño: 
-
-https://www.figma.com/file/H1LLdBpy7V7ggKO0vCQK5X/Toquen-el-DOM?node-id=0%3A1
+## [Diseño](https://www.figma.com/file/dUhDu9zAg4fiVDFwPeSoW9/Untitled?node-id=0%3A1)
 
 ##  Link del proyecto desplegado:
 https://elastic-perlman-4b5cea.netlify.app/
 
 ## Imágenes del proyecto:
 
-[![smartmockups-kyw4qvk7.jpg](https://i.postimg.cc/3NSYCRCN/smartmockups-kyw4qvk7.jpg)](https://postimg.cc/Pvwgdd7n) 
+
